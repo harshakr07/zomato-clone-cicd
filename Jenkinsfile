@@ -67,7 +67,7 @@ pipeline{
         }
         stage('Deploy to container'){
             steps{
-                sh 'docker run -d --name zomato -p 8005:80 sriharshakr07/zomato:latest'
+                sh 'docker run -d --name zomato -p 5000:5000 sriharshakr07/zomato:latest'
               }
           }
     }
