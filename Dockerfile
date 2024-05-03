@@ -17,7 +17,7 @@ COPY . .
 RUN npm run build
 
 # Expose port 5000 (or the port your app is configured to listen on)
-EXPOSE 5000
+EXPOSE 80
 
 # Start your Node.js server (assuming it serves the React app)
 CMD ["npm", "start"]
